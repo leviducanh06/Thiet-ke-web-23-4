@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>Ấn vào Add Imagine</h2>
+    <div id="bo"></div>
+    <button onclick="addnode_img();">Add Image</button>
+    <script>
+      function addnode_img() {
+        var pt = document.createElement('img');
+        pt.src = "https://bizweb.dktcdn.net/100/366/377/files/lang-bac-ho.jpg?v=1699677034595";
+        document.getElementById("bo").appendChild(pt);
+      }
+    </script>
+  </body>
+</html>

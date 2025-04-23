@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>thay thế node ở vị trí xác định: replaceChild</h2>
+    <div id="container">
+      <p id="p1">Anhong ha se zo</p>
+      <p id="p2">camsamita</p>
+    </div>
+    <button onclick="changenode()">Change Node</button>
+    <script>
+      function changenode() {
+        var node = document.createElement('div');
+        node.innerText = "mì chột xớ";
+        var x = document.getElementById('container');
+        var y = document.getElementById('p2');
+        x.replaceChild(node, y);
+      }
+    </script>
+  </body>
+</html>
